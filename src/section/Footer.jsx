@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <section id="contact" className="relative w-full bg-background pt-20 pb-32 overflow-hidden z-10 border-t border-white/5">
+    <section id="" className="relative w-full bg-background pt-20 pb-32 overflow-hidden z-10 border-t border-white/5">
       {/* Subtle Background Glow for the footer */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cyan-500/5 rounded-t-full blur-[80px] pointer-events-none"></div>
 
@@ -21,12 +21,12 @@ const Footer = () => {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 md:mt-12">
           {/* Glowing Cyan Button */}
-          <button className="w-full sm:w-auto bg-cyan-400 text-black px-8 py-3.5 rounded-full font-bold text-sm shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:bg-cyan-300 transition-all hover:scale-105">
+          {/* <button   className="w-full sm:w-auto bg-cyan-400 text-black px-8 py-3.5 rounded-full font-bold text-sm shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:bg-cyan-300 transition-all hover:scale-105">
             Let's Talk
           </button>
-          
+           */}
           {/* Outlined Contact Button */}
-          <button className="w-full sm:w-auto bg-transparent border border-gray-600 text-white px-8 py-3.5 rounded-full font-medium text-sm hover:bg-white/5 transition-all">
+          <button  onClick={()=>window.location.hash="#contact"} className="w-full sm:w-auto bg-transparent border border-gray-600 text-white px-8 py-3.5 rounded-full font-medium text-sm hover:bg-white/5 transition-all">
             Contact Me
           </button>
         </div>

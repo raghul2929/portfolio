@@ -7,7 +7,7 @@ export const experienceData = [
     description: "Building scalable frontend architectures and component systems.",
     projects: [
       {
-        tabName: "Service Website",
+        tabName: "Stepping Edge",
         title: "Stepping Edge Service Site",
         subtitle: "Corporate Web Platform",
         description: "A high-performance corporate website rebuilt with Vue.js, focusing on modular architecture and advanced SEO optimization to drive organic traffic growth.",
@@ -19,8 +19,8 @@ export const experienceData = [
         linkText: "VIEW PROJECT DETAILS"
       },
       {
-        tabName: "Parallel SST",
-        title: "Parallel SST Dashboard",
+        tabName: "SST",
+        title: "SST Dashboard",
         subtitle: "Internal Analytics Tool",
         description: "Developed a robust internal serverless dashboard using modern frontend tools to monitor traffic and manage administrative routing across the corporate network.",
         tech: ["React", "Tailwind CSS", "AWS SST"],

@@ -16,7 +16,7 @@ const About = () => {
         {/* Left Side: Image with Giant Text */}
         <div className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden group border border-white/5">
           <img 
-            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" 
+            src="/assests/aboutimg.png"
             alt="Profile" 
             className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
           />
