@@ -8,7 +8,7 @@ const Navbar = () => {
       {/* Left: Logo */}
       <div className="flex items-center gap-4 cursor-pointer">
         <div className="w-10 h-10  text-black flex items-center justify-center font-bold text-lg rounded-sm">
-          <img src="/assests/logo1.jpg" alt="Logo" className="w-full h-full object-contain" />
+          <img src="/public/assests/logo1.jpg" alt="Logo" className="w-full h-full object-contain" />
         </div>
         <span className="text-white font-bold tracking-widest text-xs md:text-sm uppercase">
          <a href="">Raghul</a>
