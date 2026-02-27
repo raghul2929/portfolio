@@ -4,78 +4,125 @@ export const experienceData = [
     date: "DEC 2023 - PRESENT",
     role: "Software Engineer",
     company: "Stepping Edge, Coimbatore",
-    description: "Building scalable frontend architectures and component systems.",
+    description:
+      "Building scalable frontend architectures and component systems.",
     projects: [
       {
         tabName: "Stepping Edge",
-        title: "Stepping Edge Service Site",
-        subtitle: "Corporate Web Platform",
-        description: "A high-performance corporate website rebuilt with Vue.js, focusing on modular architecture and advanced SEO optimization to drive organic traffic growth.",
+        title: "Stepping Edge Corporate Website",
+        subtitle: "Custom Software development company website",
+        description:
+          "A high-performance corporate website rebuilt with Vue.js, focusing on modular architecture and advanced SEO optimization to drive organic traffic growth.We’re unique, creative and always thrive to provide Solutions beyond EDGE.",
         tech: ["Vue.js", "SEO", "Responsive Design"],
+        images: ["/assets/steppingedge.png", "/assets/se1.png"],
         achievements: [
           "Boosted page load performance by 35%",
-          "Implemented dynamic routing for services"
+          "Implemented dynamic routing for services",
         ],
-        linkText: "VIEW PROJECT DETAILS"
+        linkText: "VIEW PROJECT DETAILS",
+        demoLink: "https://steppingedge.com",
       },
       {
         tabName: "SST",
-        title: "SST Dashboard",
-        subtitle: "Internal Analytics Tool",
-        description: "Developed a robust internal serverless dashboard using modern frontend tools to monitor traffic and manage administrative routing across the corporate network.",
-        tech: ["React", "Tailwind CSS", "AWS SST"],
+        title: "SST computer vision CCTV",
+        subtitle: "Video analytics for cctv ",
+        description:
+          "Developed a robust application for real-time video analytics for cctv cameras : object detection, tracking, and automatic alerting.",
+        tech: ["React", "Tailwind CSS"],
+        images: ["/assets/sstimg1.png", "/public/assets/sstimg2.png"],
         achievements: [
-          "Reduced data fetch times by 20%",
-          "Streamlined internal data monitoring"
+          "Integrated real-time video processing",
+          "Implemented custom alerting system",
+
         ],
-        linkText: "VIEW INTERNAL TOOL"
-      }
-    ]
+        linkText: "VIEW PROJECT DETAILS",
+        demoLink: "https://frontend-dev.sst.vision/",
+      },
+      {
+        tabName: "Progressoedge",
+        title: "ProgressoEdge Corporate Website",
+        subtitle: "Business Process Outsourcing Company Delivering Scalable Digital Marketing Services", 
+        description:
+          "A high-performance corporate website rebuilt with Vue.js, focusing on modular architecture and advanced SEO optimization to drive organic traffic growth.Streamline operations and accelerate revenue with integrated BPO solutions and performance-driven digital marketing services..",
+        tech: ["Vue.js", "SEO", "Responsive Design"],
+        images: ["/assets/progressoedge1.png", "/assets/progressoedge2.png"],
+        achievements: [
+          "Boosted page load performance by 35%",
+          "Implemented dynamic routing for services",
+        ],
+        linkText: "VIEW PROJECT DETAILS",
+        demoLink: "https://progressoedge.com/",
+      },
+    ],
   },
   {
     id: 2,
     date: "2024 - PRESENT",
     role: "Personal Projects",
     company: "Independent Development",
-    description: "Exploring innovative solutions and building practical applications.",
+    description:
+      "Exploring innovative solutions and building practical applications.",
     projects: [
       {
         tabName: "Email Automation",
         title: "Email Automation Platform",
         subtitle: "Full-stack Marketing Tool",
-        description: "A comprehensive SaaS full-stack MVP designed to automate marketing workflows. Handled list management, campaign scheduling, and real-time analytics for email delivery.",
-        tech: ["React", "Node.js", "MongoDB", "Express.js"],
+        description:
+          "A comprehensive SaaS full-stack MVP designed to automate marketing workflows. Handled list management, campaign scheduling, and real-time analytics for email delivery.",
+        tech: ["flutter(dart)", "Node.js", "MongoDB", "Express.js ","Resend"],
+        images: ["/assets/email/email1.png", "/assets/email/email2.png"],
         achievements: [
           "Automated delivery system",
-          "Campaign analytics dashboard"
+          "Campaign analytics dashboard",
         ],
-        linkText: "EXPLORE PROJECT"
+        linkText: "EXPLORE PROJECT",
       },
       {
         tabName: "Career Guidance",
         title: "Career Path Finder",
         subtitle: "Student Mentorship Platform",
-        description: "An interactive platform helping students map out their educational journey based on current skills and market trends.",
-        tech: ["React", "Firebase", "Tailwind"],
+        description:
+          "An interactive platform helping students map out their educational journey based on current skills and market trends.",
+        tech: ["Html", "CSS","javascript", "Firebase", "Tailwind"],
+        images: ["/assets/carrerguidice/landingpage.png", "/assets/carrerguidice/img2.png"],
         achievements: [
           "100+ active student users",
-          "Integrated real-time chat"
+          "Integrated real-time chat",
         ],
-        linkText: "VIEW DEMO"
+        linkText: "EXPLORE PROJECT",
+        demoLink:"https://levelup-1f91a.web.app/"
       },
+      {
+        tabName: "Portfolio Website",
+        title: "My Portfolio Website",
+        subtitle: "Personal Portfolio Website",
+        description:
+          "A custom-built portfolio website showcasing my projects, skills, and experience with a focus on clean design and responsive performance.",
+        tech: ["React.js", "Tailwind CSS", "Framer Motion"],
+        images: ["/assets/portfolio/landing.png", "/assets/portfolio/image.png"],
+        achievements: [
+          
+          "Implemented smooth animations with Framer Motion",
+          "Optimized for mobile and desktop performance",
+        ], 
+        linkText: "VIEW PROJECT",
+        demoLink: "http://raghulportfolio.hub29.online/"
+      },
+      
       {
         tabName: "Scholarship Platform",
         title: "Scholarship Finder",
         subtitle: "Educational Resource App",
-        description: "A centralized hub for students to discover and apply for verified national and international scholarships based on their profile.",
-        tech: ["Next.js", "PostgreSQL", "Prisma"],
+        description:
+          "A centralized hub for students to discover and apply for verified national and international scholarships based on their profile.",
+        tech: ["HTML", "CSS", "javascript", "Node.js", "MongoDB"],
         achievements: [
           "Scraped 500+ active scholarships",
-          "Custom user matching algorithm"
+          "Custom user matching algorithm",
         ],
-        linkText: "VIEW PROJECT"
-      }
-    ]
+        linkText: "VIEW PROJECT",
+      },
+    ],
   },
   {
     id: 3,
@@ -83,57 +130,67 @@ export const experienceData = [
     role: "Junior Software Engineer",
     company: "BrewsZilla Technologies, Bengaluru",
     roleHighlight: "Flutter Developer",
-    description: "Focused on cross-platform mobile application development and API integration.",
+    description:
+      "Focused on cross-platform mobile application development and API integration.",
     projects: [
       {
         tabName: "CMIS",
-        title: "BrewsZilla CMIS",
-        subtitle: "Internal Management",
-        description: "Internal management information system for tracking employee metrics and project deliverables across the organization.",
-        tech: ["React.js", "Redux", "Material UI"],
+        title: "CMIS",
+        subtitle: "Cocoa management information system",
+        description:
+          "Internal management information system for tracking cocoa framer metrics and farmer group details.",
+        tech: ["Flutter", "Dart", "postgreSQL","sqllite"],
+        images: ["/assets/cmis/image1.png", "/assets/cmis/image.png"],
         achievements: [
-          "Streamlined reporting by 30%",
-          "Built custom data grid components"
+          "Implemented offline-first data sync",
+          "Designed intuitive data entry forms",          
         ],
-        linkText: "VIEW DETAILS"
+        linkText: "VIEW DETAILS",
       },
       {
         tabName: "BrewsZilla App",
         title: "BrewsZilla Mobile App",
         subtitle: "Cross-platform Mobile Application",
-        description: "Developed the core mobile experience using Flutter, focusing on smooth animations, offline support, and seamless API communication.",
-        tech: ["Flutter", "Dart", "Firebase"],
+        description:
+          "Developed the core mobile experience using Flutter, focusing on smooth animations, offline support, and seamless API communication.",
+        tech: ["Flutter", "Dart", "graphQL", "hasura","golang", "keycloak","postgreSQL"],
+        images: ["/assets/brewzillaapp/app1.png", "/assets/brewzillaapp/app2.png"],
         achievements: [
           "Published to iOS and Android",
-          "Implemented complex state management"
+          "Implemented complex state management",
         ],
-        linkText: "VIEW APP STORE"
+        linkText: "VIEW PROJECT DETAILS",
       },
       {
         tabName: "BrewsZilla CMS",
         title: "BrewsZilla CMS",
         subtitle: "Enterprise Content Management System",
-        description: "A robust CMS engineered to streamline content delivery across BrewsZilla's multi-platform ecosystem. Features real-time editing, role-based access control, and seamless API integration for instant updates.",
-        tech: ["React.js", "Node.js", "GraphQL", "MongoDB"],
+        description:
+          "A robust CMS engineered to streamline content delivery across BrewsZilla's multi-platform ecosystem. Features real-time editing, role-based access control, and seamless API integration for instant updates.",
+        tech: ["svelte.js", "GraphQL", "Hasura","Golang", "Keycloak","PostgreSQL"],
+        images: ["/assets/brewszillacms/image.png", "/assets/brewszillacms/image2.png"],
         achievements: [
-          "Reduced content deployment time by 40%",
-          "Implemented custom rich text editor"
+          "Achieved 99.9% uptime with optimized backend architecture",
+          "Implemented granular role-based access control for secure content management",
         ],
-        linkText: "VIEW FULL PROJECT"
+        linkText: "VIEW FULL PROJECT",
       },
       {
         tabName: "BrewsZilla Website",
         title: "BrewsZilla Public Facing Site",
         subtitle: "Marketing & Landing Pages",
-        description: "The main marketing website for the BrewsZilla brand, optimized for lightning-fast load times and high conversion rates.",
+        description:
+          "The main marketing website for the BrewsZilla brand, optimized for lightning-fast load times and high conversion rates.",
         tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+        images: ["/assets/brewszillweb/img1.png", "/assets/brewszillweb/img2.png"],
         achievements: [
           "Achieved 99/100 Lighthouse score",
-          "Integrated headless CMS content"
+          "Integrated headless CMS content",
         ],
-        linkText: "VIEW LIVE SITE"
-      }
-    ]
+        linkText: "VIEW LIVE SITE",
+        demoLink: "https://brewszilla.com/",
+      },
+    ],
   },
   {
     id: 4,
@@ -141,14 +198,14 @@ export const experienceData = [
     role: "B.E. Computer Science",
     company: "K S R Institute for Engineering and Technology",
     description: "",
-    isSimpleCard: true, 
+    isSimpleCard: true,
     cardData: {
-      description: "Graduated with a focus on core computer science principles and software engineering methodologies.",
-      score: "78% Score"
-    }
-  }
+      description:
+        "Graduated with a focus on core computer science principles and software engineering methodologies.",
+      score: "78% Score",
+    },
+  },
 ];
-
 
 // ... Keep your existing experienceData array above ...
 
@@ -157,8 +214,9 @@ export const experienceData = [
 export const aboutData = {
   role: "Software Engineer",
   location: "Tamil Nadu, India",
-  description: "Passionate about crafting scalable digital experiences. With over 2 years of engineering excellence, I specialize in building intuitive user interfaces and robust backend architectures. I bridge the gap between design and technology.",
-  tags: ["Problem Solver", "UI Enthusiast", "Clean Code"]
+  description:
+    "Passionate about crafting scalable digital experiences. With over 2 years of engineering excellence, I specialize in building intuitive user interfaces and robust backend architectures. I bridge the gap between design and technology.",
+  tags: ["Problem Solver", "UI Enthusiast", "Clean Code"],
 };
 
 export const arsenalData = [
@@ -170,10 +228,22 @@ export const arsenalData = [
     glowColor: "bg-cyan-500/20",
     iconColor: "text-cyan-400",
     skills: [
-      { name: "React.js", desc: "Component Architecture", iconColor: "text-cyan-400" },
-      { name: "Vue.js", desc: "Progressive Framework", iconColor: "text-emerald-400" },
-      { name: "Flutter", desc: "Cross-platform mobile", iconColor: "text-blue-400" }
-    ]
+      {
+        name: "React.js",
+        desc: "Component Architecture",
+        iconColor: "text-cyan-400",
+      },
+      {
+        name: "Vue.js",
+        desc: "Progressive Framework",
+        iconColor: "text-emerald-400",
+      },
+      {
+        name: "Flutter",
+        desc: "Cross-platform mobile",
+        iconColor: "text-blue-400",
+      },
+    ],
   },
   {
     id: "backend",
@@ -184,8 +254,8 @@ export const arsenalData = [
     iconColor: "text-fuchsia-400",
     skills: [
       { name: "Node.js", desc: "Runtime", iconColor: "text-green-400" },
-      { name: "REST APIs", desc: "Architecture", iconColor: "text-orange-400" }
-    ]
+      { name: "REST APIs", desc: "Architecture", iconColor: "text-orange-400" },
+    ],
   },
   {
     id: "tools",
@@ -197,11 +267,14 @@ export const arsenalData = [
     skills: [
       { name: "Git", desc: "Version Control", iconColor: "text-orange-500" },
       { name: "Postman", desc: "API Testing", iconColor: "text-orange-400" },
-      { name: "Keycloak", desc: "Identity & Access", iconColor: "text-blue-500" }
-    ]
-  }
+      {
+        name: "Keycloak",
+        desc: "Identity & Access",
+        iconColor: "text-blue-500",
+      },
+    ],
+  },
 ];
-
 
 // ... Keep your existing experienceData, aboutData, and arsenalData above ...
 
@@ -215,7 +288,7 @@ export const educationData = [
     school: "K S R Institute",
     date: "2020 - 2024",
     score: "78%",
-    theme: "cyan" // Drives the icon color, left border, and date pill
+    theme: "cyan", // Drives the icon color, left border, and date pill
   },
   {
     id: 2,
@@ -224,7 +297,7 @@ export const educationData = [
     school: "Sun Stars Higher Secondary",
     date: "2019 - 2020",
     score: "67%",
-    theme: "purple"
+    theme: "purple",
   },
   {
     id: 3,
@@ -233,6 +306,6 @@ export const educationData = [
     school: "Sri Raja Vinayaga",
     date: "2017 - 2018",
     score: "84%",
-    theme: "blue"
-  }
+    theme: "blue",
+  },
 ];

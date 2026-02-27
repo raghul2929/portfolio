@@ -4,7 +4,7 @@ import { experienceData } from '../data';
 
 // Helper function to dynamically map neutral default states -> glowing active states
 const getThemeConfig = (id) => {
-  switch(id) {
+  switch (id) {
     case 2: // Personal Projects (Purple Theme)
       return {
         text: 'text-gray-400 group-hover:text-fuchsia-400 group-focus-within:text-fuchsia-400',
@@ -55,14 +55,13 @@ const ProjectCard = ({ projects, id, theme }) => {
           <button
             key={idx}
             onClick={() => setActiveTab(idx)}
-            className={`pb-4 text-sm font-semibold transition-colors relative ${
-              activeTab === idx ? 'text-white' : 'text-gray-500 hover:text-gray-300'
-            }`}
+            className={`pb-4 text-sm font-semibold transition-colors relative ${activeTab === idx ? 'text-white' : 'text-gray-500 hover:text-gray-300'
+              }`}
           >
             {proj.tabName}
             {/* Themed active underline */}
             {activeTab === idx && (
-              <motion.div 
+              <motion.div
                 layoutId={`underline-${id}`}
                 className={`absolute bottom-0 left-0 w-full h-0.5 ${theme.line}`}
               />
@@ -70,7 +69,7 @@ const ProjectCard = ({ projects, id, theme }) => {
           </button>
         ))}
       </div>
-      
+
       {/* Dynamic Card Content */}
       <div className="p-6 md:p-8">
         <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
@@ -84,9 +83,9 @@ const ProjectCard = ({ projects, id, theme }) => {
               <p className="text-xs text-text-muted">{currentProject.subtitle}</p>
             </div>
           </div>
-          
+
           {/* Glowing View Demo Button */}
-          <button className={`flex items-center gap-2 text-[11px] font-bold px-4 py-2.5 rounded-xl transition-all duration-500 border backdrop-blur-md hover:bg-white/5 ${theme.text} ${theme.bg} ${theme.border} ${theme.glow}`}>
+          <button onClick={() => window.open(currentProject.demoLink, '_blank')} className={`flex items-center gap-2 text-[11px] font-bold px-4 py-2.5 rounded-xl transition-all duration-500 border backdrop-blur-md hover:bg-white/5 ${theme.text} ${theme.bg} ${theme.border} ${theme.glow}`}>
             VIEW DEMO
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
@@ -99,15 +98,20 @@ const ProjectCard = ({ projects, id, theme }) => {
           {currentProject.description}
         </p>
 
-        {/* Image Placeholders */}
+        {/* Project Images */}
         <div className="grid grid-cols-2 gap-3 md:gap-4 mb-8">
-          <div className="bg-[#1c1f26] h-24 md:h-32 rounded-2xl border border-white/5 relative overflow-hidden transition-colors">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
-          </div>
-          <div className="bg-[#1c1f26] h-24 md:h-32 rounded-2xl border border-white/5 relative overflow-hidden transition-colors flex items-center justify-center">
-             <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent"></div>
-             <span className="text-green-400 font-bold text-[10px] md:text-sm z-10 text-center px-2">SEO PERFORMANCE</span>
-          </div>
+          {currentProject.images?.map((img, i) => (
+            <div
+              key={i}
+              className="h-24 md:h-32 rounded-2xl border border-white/5 overflow-hidden"
+            >
+              <img
+                src={img}
+                alt={`project-${i}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
         </div>
 
         {/* Tech Stack & Achievements Grid */}
@@ -147,17 +151,16 @@ const ProjectCard = ({ projects, id, theme }) => {
   );
 };
 
-// Main Experience Section
+
 const Experience = () => {
-  // Framer motion hooks for the scroll-filling vertical timeline line
+  
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start center", "end center"] // Adjusts when the line fills based on scroll position
-  });
-  
-  // Adds a smooth spring animation to the scroll fill so it doesn't jump rigidly
-  const scaleY = useSpring(scrollYProgress, {
+    offset: ["start center", "end center"] 
+    });
+
+    const scaleY = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
@@ -165,8 +168,8 @@ const Experience = () => {
 
   return (
     <section id="experience" className="section-padding relative z-10 w-full bg-background pt-20 overflow-hidden">
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -189,23 +192,23 @@ const Experience = () => {
 
       {/* Main Timeline Container (Tracked by Framer Motion for scroll) */}
       <div ref={containerRef} className="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-0">
-        
+
         {/* The Static Background Vertical Line */}
         <div className="hidden md:block absolute left-[35%] top-0 bottom-0 w-[2px] bg-white/5 -translate-x-1/2 rounded-full z-0"></div>
-        
+
         {/* The Animated Fill Vertical Line (Grows based on scroll) */}
-        <motion.div 
+        <motion.div
           style={{ scaleY, transformOrigin: "top" }}
           className="hidden md:block absolute left-[35%] top-0 bottom-0 w-[2px] bg-blue-600 -translate-x-1/2 rounded-full z-0"
         ></motion.div>
 
         <div className="flex flex-col gap-12 md:gap-24 relative z-10">
           {experienceData.map((item, index) => {
-            const theme = getThemeConfig(item.id); 
+            const theme = getThemeConfig(item.id);
 
             return (
-              <motion.div 
-                key={item.id} 
+              <motion.div
+                key={item.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
@@ -213,7 +216,7 @@ const Experience = () => {
                 // IMPORTANT: The "group" class here triggers the hover state for the dot AND the card simultaneously!
                 className="relative group flex flex-col md:flex-row md:justify-between items-start gap-8 md:gap-0"
               >
-                
+
                 {/* Left Side: Role Info */}
                 <div className="w-full md:w-[30%] md:text-right flex flex-col md:items-end pt-2">
                   <span className={`inline-block px-4 py-1.5 text-[10px] md:text-xs font-bold rounded-full mb-4 border w-fit md:ml-auto uppercase tracking-widest transition-colors duration-500 ${theme.text} ${theme.bg} ${theme.border}`}>
