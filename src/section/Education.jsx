@@ -16,7 +16,7 @@ const getTheme = (color) => {
 
 const Education = () => {
   return (
-    <section className="section-padding relative z-10 w-full bg-background pt-24 pb-32">
+    <section  data-guide-id="journey" className="section-padding relative z-10 w-full bg-background pt-24 pb-32">
       {/* Added px-6 md:px-0 right here! */}
       <div className="max-w-4xl mx-auto px-6 md:px-0">
         

@@ -4,7 +4,7 @@ import { aboutData } from '../data';
 
 const About = () => {
   return (
-    <section id="about" className="section-padding relative z-10 w-full bg-background pt-24 md:pt-32">
+    <section id="about"  data-guide-id="about" className="section-padding relative z-10 w-full bg-background pt-24 md:pt-32">
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

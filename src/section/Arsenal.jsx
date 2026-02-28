@@ -4,7 +4,7 @@ import { arsenalData } from '../data';
 
 const Arsenal = () => {
   return (
-    <section className="section-padding relative z-10 w-full bg-background pt-16">
+    <section  data-guide-id="arsenal" className="section-padding relative z-10 w-full bg-background pt-16">
       {/* Added px-6 md:px-0 right here! */}
       <div className="max-w-6xl mx-auto px-6 md:px-0">
         

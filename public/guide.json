@@ -1,0 +1,186 @@
+{
+  "page": "portfolio",
+  "language": "en",
+  "steps": [
+    {
+      "selector": "[data-guide-id='hero']",
+      "order": 1,
+      "translations": {
+        "en": {
+          "title": "Welcome to Raghul's Portfolio",
+          "description": "Software Engineer from Tamil Nadu. Let me walk you through everything here."
+        },
+        "ta": {
+          "title": "Raghul Portfolio-ku Vanakkam",
+          "description": "Tamil Nadu Software Engineer. Idhai pathi ellam kaattukirein."
+        },
+        "hi": {
+          "title": "Raghul ke Portfolio mein Swagat",
+          "description": "Tamil Nadu ka Software Engineer. Sab kuch dikhata hoon."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='experience']",
+      "order": 2,
+      "translations": {
+        "en": {
+          "title": "Work Experience",
+          "description": "My professional career timeline. Each role shows what I built and where I worked."
+        },
+        "ta": {
+          "title": "Panи Anubhavam",
+          "description": "En tholil vazhi. Oவொரு nilaiyum naan enge, enna seithein endru kaattukirathu."
+        },
+        "hi": {
+          "title": "Kaam ka Anubhav",
+          "description": "Meri professional career timeline. Har role mein kya banaya aur kahan kaam kiya."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='experience-timeline']",
+      "order": 3,
+      "translations": {
+        "en": {
+          "title": "Career Timeline",
+          "description": "Currently Software Engineer at Stepping Edge, Coimbatore since Dec 2023. Building scalable frontend architectures."
+        },
+        "ta": {
+          "title": "Tholil Neriya Vazhi",
+          "description": "Tharpoathu Stepping Edge-il Software Engineer, Coimbatore. Dec 2023 muthal scalable frontend kattukiren."
+        },
+        "hi": {
+          "title": "Career Timeline",
+          "description": "Abhi Stepping Edge, Coimbatore mein Software Engineer hoon. Dec 2023 se scalable frontend bana raha hoon."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='experience-tabs']",
+      "order": 4,
+      "translations": {
+        "en": {
+          "title": "Project Tabs",
+          "description": "Click Stepping Edge, SST, or Progressoedge to see details of each project I worked on."
+        },
+        "ta": {
+          "title": "Thittam Tabs",
+          "description": "Stepping Edge, SST, Progressoedge click seiyungal — oவொரு project pathi theriyum."
+        },
+        "hi": {
+          "title": "Project Tabs",
+          "description": "Stepping Edge, SST, ya Progressoedge click karein — har project ki details dekhein."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='experience-project-title']",
+      "order": 5,
+      "translations": {
+        "en": {
+          "title": "Project Details",
+          "description": "Stepping Edge Corporate Website — rebuilt with Vue.js, advanced SEO, boosted page load by 35%."
+        },
+        "ta": {
+          "title": "Thittam Vivaragal",
+          "description": "Stepping Edge Corporate Website — Vue.js kodụ maarri, SEO-vodu page load 35% aagiyathu."
+        },
+        "hi": {
+          "title": "Project Details",
+          "description": "Stepping Edge Corporate Website — Vue.js se rebuild, advanced SEO, page load 35% badhaya."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='experience-demo-btn']",
+      "order": 6,
+      "translations": {
+        "en": {
+          "title": "View Live Demo",
+          "description": "Click VIEW DEMO to see the live deployed version of this project in action."
+        },
+        "ta": {
+          "title": "Demo Kaanungal",
+          "description": "VIEW DEMO click seiyungal — ithu live-aaga deploy aana project kaattukirathu."
+        },
+        "hi": {
+          "title": "Live Demo Dekhein",
+          "description": "VIEW DEMO click karein — yeh project live deploy hua hua hai."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='experience-tech-stack']",
+      "order": 7,
+      "translations": {
+        "en": {
+          "title": "Tech Stack Used",
+          "description": "Vue.js for frontend, SEO optimization techniques, and Responsive Design for all screen sizes."
+        },
+        "ta": {
+          "title": "Payan Padutta Thozhilnutpam",
+          "description": "Vue.js frontend-ku, SEO optimization, Responsive Design ellaa screen-ku."
+        },
+        "hi": {
+          "title": "Tech Stack",
+          "description": "Vue.js frontend ke liye, SEO optimization, aur Responsive Design sab screens ke liye."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='experience-details-btn']",
+      "order": 8,
+      "translations": {
+        "en": {
+          "title": "Full Project Details",
+          "description": "Click VIEW PROJECT DETAILS to read the complete breakdown of architecture and key achievements."
+        },
+        "ta": {
+          "title": "Muga Thittam Vivaragal",
+          "description": "VIEW PROJECT DETAILS click seiyungal — muழு architecture matrum achievements kaanungal."
+        },
+        "hi": {
+          "title": "Poori Project Details",
+          "description": "VIEW PROJECT DETAILS click karein — poora architecture aur achievements padhein."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='about']",
+      "order": 9,
+      "translations": {
+        "en": {
+          "title": "About Me",
+          "description": "Software Engineer with 2+ years experience building scalable UIs and robust backend systems."
+        },
+        "ta": {
+          "title": "En Pathi",
+          "description": "2 varudam anubhavam konda Software Engineer. Scalable UI matrum backend seikirain."
+        },
+        "hi": {
+          "title": "Mere Baare Mein",
+          "description": "2+ saal ke anubhav wala Software Engineer. Scalable UI aur backend banata hoon."
+        }
+      }
+    },
+    {
+      "selector": "[data-guide-id='contact']",
+      "order": 10,
+      "translations": {
+        "en": {
+          "title": "Get In Touch",
+          "description": "Have a vision? Fill this form to collaborate on high-impact projects together."
+        },
+        "ta": {
+          "title": "Thodarbu Kolgal",
+          "description": "Oru yosanai irukka? Idhai nirappi projects pathi pesuvoam."
+        },
+        "hi": {
+          "title": "Sampark Karein",
+          "description": "Koi vision hai? Form bharke high-impact projects ke liye collaborate karein."
+        }
+      }
+    }
+  ]
+}

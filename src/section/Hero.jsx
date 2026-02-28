@@ -5,7 +5,7 @@ const Hero = () => {
     // 1. Swapped min-h-screen for min-h-[100svh] for better mobile rendering
     // 2. Removed pt-20 to allow perfect vertical centering
     // 3. Added pb-32 md:pb-16 to prevent content from overlapping the absolute footer
-    <section id="hero" className="relative min-h-[100svh] flex flex-col items-center justify-center px-6 pb-2 md:pb-16 overflow-hidden">
+    <section id="hero"  data-guide-id="hero" className="relative min-h-[100svh] flex flex-col items-center justify-center px-6 pb-2 md:pb-16 overflow-hidden">
       
       {/* Subtle Background Radial Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>

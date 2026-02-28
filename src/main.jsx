@@ -8,3 +8,12 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+
+// Dynamic import so it doesn't block React rendering
+import GuideAgent from 'guideagent'
+
+setTimeout(() => {
+  GuideAgent.initFromUrl('/guide.json')
+  GuideAgent.setLang('en')
+}, 800)
